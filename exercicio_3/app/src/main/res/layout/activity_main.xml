@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_radio_example"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" tools:context="shodi.exercicio_3.MainActivity">
+
+
+
+    <EditText android:id="@+id/textNome" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true" android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10" android:hint="Name" android:inputType="textPersonName" />
+    <TextView android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignParentStart="true" android:layout_below="@+id/textNome" android:layout_marginTop="13dp"
+        android:text="Gênero" />
+    <RadioGroup android:id="@+id/radioGroup02" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true" android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView">
+        <RadioButton android:id="@+id/radioMasc" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Masculino" />
+        <RadioButton android:id="@+id/radioFem" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Feminino" />
+    </RadioGroup>
+
+    <TextView android:id="@+id/textViewState" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignParentStart="true" android:layout_below="@+id/radioGroup02" android:layout_marginTop="13dp"
+        android:text="Estado Civil" />
+    <RadioGroup android:id="@+id/radioGroup03" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true" android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewState">
+        <RadioButton android:id="@+id/casado" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Casado" />
+        <RadioButton android:id="@+id/solteiro" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Solteiro" />
+        <RadioButton android:id="@+id/viuvo" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Viúvo" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup03"
+        android:layout_marginTop="5dp"
+        android:text="Mostrar Mensagem" />
+</RelativeLayout>
